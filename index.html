@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>warmup set calculator</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="warmup_20100916.js"></script>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="warmup.css" />
+
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-18064555-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+	</head>
+	<body>
+		<div class="border">
+			<table id="starting_ending_tbl">
+				<tr><td>Starting Weight</td>
+					<td><input type="text" id="starting_weight" name="starting_weight" value="45" size="8" /></td>
+				</tr>
+				<tr><td>Ending Weight</td>
+					<td><input type="text" id="ending_weight" name="ending_weight" value="" size="8" /></td>
+				</tr>
+			</table>
+
+			<div id="preferences_box">
+				<table>
+					<tr><td>Bar</td>
+						<td><input type="text" id="bar" name="bar" value="45" size="8" /></td>
+					</tr>
+					<tr><td>Plates</td>
+						<td><input type="text" id="plates" name="plates" value="45, 25, 10, 5, 2.5" /></td>
+					</tr>
+					<tr><td>Rounding</td>
+						<td><input type="checkbox" id="round" name="round" checked="checked" /></td>
+					</tr>
+				</table>
+			</div>
+			<div id="show_settings_button"><a href="#" id="show_prefs_link">show settings</a></div>
+			<div id="incr_p">Increment: <span id="increment">_</span></div>
+			<table id="set_table">
+				<tr><th class='cl'>Set</th><th class='cr'>Plates (on each side)</th></tr>
+				<tr class='odd'><td class='cl'>5 x <span class="set" mult="0">_</span></td><td class="cr pl plate_list_0"></td><tr>
+				<tr><td class='cl'>5 x <span class="set" mult="0">_</span></td><td class="cr pl plate_list_0"></td><tr>
+				<tr class='odd'><td class='cl'>5 x <span class="set" mult="1">_</span></td><td class="cr pl plate_list_1"></td><tr>
+				<tr><td class='cl'>3 x <span class="set" mult="2">_</span></td><td class="cr pl plate_list_2"></td><tr>
+				<tr class='odd'><td class='cl'>2 x <span class="set" mult="3">_</span></td><td class="cr pl plate_list_3"></td><tr>
+						<tr><td class='cl'><b>5 x <span class="set" mult="final">_</span></b></td><td class="cr pl plate_list_final"></td><tr>
+			</table>
+			</div>
+		</div>
+	</body>
+</html>
